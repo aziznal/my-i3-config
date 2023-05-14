@@ -174,3 +174,6 @@ exec_always feh --bg-scale ~/Pictures/Wallpapers/arch.jpg
 exec spotify-launcher
 assign [class="Spotify"] $ws10
 
+# Hide borders on the left and right of windows
+hide_edge_borders both
+
