@@ -180,3 +180,6 @@ bindsym $mod+r mode "resize"
 bar {
         status_command i3status
 }
+
+# set bg
+exec_always feh --bg-scale ~/Pictures/Wallpapers/arch.jpg

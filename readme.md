@@ -7,5 +7,7 @@
 
 2. clone the repo into `~/.config/i3`
 
+    2.1 change your bg (optional)
+
 3. done!
 
