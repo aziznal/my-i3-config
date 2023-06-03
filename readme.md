@@ -5,10 +5,19 @@
     2. `i3lock`
     3. `i3status`
     4. `playerctl`
+    5. `polybar`
+    6. `pulseaudio-control`
 
 2. clone the repo into `~/.config/i3`
 
     2.1 change your bg (optional)
 
 3. done!
+
+---
+
+## Post Setup
+
+### Nerd Font
+You will need to use a nerdfont to get icons to display correctly in status bar and other places.
 
