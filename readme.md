@@ -7,6 +7,7 @@
     4. `playerctl`
     5. `polybar`
     6. `pulseaudio-control`
+    7. `picom`
 
 2. clone the repo into `~/.config/i3`
 

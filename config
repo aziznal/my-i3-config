@@ -26,17 +26,21 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 
+exec volnoti --timeout 2 --alpha 0.70 --corner-radius 16
+
+set $get_volume exec $HOME/.config/i3/volume/get_volume.sh
+set $get_mute_status exec $HOME/.config/i3/volume/get_mute_status.sh
+
 # Use pactl to adjust volume in PulseAudio.
-set $refresh_i3status killall -SIGUSR1 i3status
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
-bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% && volnoti-show $(eval $get_volume) 
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5% && volnoti-show $(eval $get_volume) 
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && volnoti-show $(eval $get_mute_status)
+bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && notify-send "Mic muted"
 
 # Media keys
-bindsym XF86AudioPlay exec playerctl play-pause
-bindsym XF86AudioNext exec playerctl next
-bindsym XF86AudioPrev exec playerctl prev
+bindsym XF86AudioPlay exec playerctl play-pause && notify-send "Play/Pause"
+bindsym XF86AudioNext exec playerctl next && notify-send "Next"
+bindsym XF86AudioPrev exec playerctl prev && notify-send "Previous"
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -46,7 +50,7 @@ floating_modifier $mod
 tiling_drag modifier titlebar
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec kitty 
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -185,11 +189,6 @@ default_floating_border pixel 1
 # Configure keyboard repeat speed
 exec_always --no-startup-id xset r rate 200 50
 
-# bar {
-#     status_command polybar
-#     position top
-# }
-
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # Gaps
@@ -201,7 +200,7 @@ smart_gaps on
 bindsym Control+Mod1+s exec pulseaudio-control next-node
 
 # enable bluetooth on startup
-# exec_always --no-startup-id blueberry 
+exec_always --no-startup-id blueberry-tray
 
 # Make the currently focused window a scratchpad
 bindsym $mod+Shift+minus move scratchpad
@@ -209,4 +208,5 @@ bindsym $mod+Shift+minus move scratchpad
 # Show the first scratchpad window
 bindsym $mod+minus scratchpad show
 
-
+# Startup dunst
+exec --no-startup-id dunst -config $HOME/.config/i3/dunst.conf
