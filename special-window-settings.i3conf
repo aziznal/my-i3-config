@@ -9,3 +9,5 @@ for_window [class="Pavucontrol"] floating enable, move position 1420 px 48 px, r
 for_window [class="gnome-calculator"] floating enable
 
 for_window [class="copyq"] floating enable
+
+for_window [class="Yad"] floating enable, move position 1420 px 48 px
