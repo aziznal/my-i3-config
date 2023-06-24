@@ -45,3 +45,5 @@ assign [class="Spotify"] $ws9
 exec --no-startup-id easyeffects 
 assign [class="easyeffects"] $ws9 
 for_window [class="easyeffects"] resize set 700px 
+
+exec copyq
