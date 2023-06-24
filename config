@@ -1,8 +1,10 @@
+# vim:ft=i3config
+
 # this needs to stay here or it doesn't work for some reason
 set $mod Mod4
 
-include ~/.config/i3/general-settings.conf
-include ~/.config/i3/startup.conf
-include ~/.config/i3/keybinds.conf
-include ~/.config/i3/special-window-settings.conf
+include ~/.config/i3/general-settings.i3conf
+include ~/.config/i3/startup.i3conf
+include ~/.config/i3/keybinds.i3conf
+include ~/.config/i3/special-window-settings.i3conf
 
