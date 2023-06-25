@@ -7,7 +7,7 @@ exec_always "setxkbmap -layout us,tr,ar -option 'grp:alt_shift_toggle'"
 exec_always --no-startup-id picom -b --config ~/.config/i3/picom.conf
 
 # set bg
-exec_always feh --bg-scale ~/Pictures/Wallpapers/neon/street_night_city_neon_140672_1920x1080.jpg
+exec_always feh --bg-scale ~/Pictures/Wallpapers/space/planet.jpg
 
 # Configure keyboard repeat speed
 exec_always --no-startup-id xset r rate 200 50
