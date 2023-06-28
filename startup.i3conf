@@ -47,3 +47,6 @@ assign [class="easyeffects"] $ws9
 for_window [class="easyeffects"] resize set 700px 
 
 exec copyq
+
+exec --no-startup-id todoist 
+for_window [class="Todoist"] , move scratchpad 
