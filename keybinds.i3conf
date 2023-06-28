@@ -25,7 +25,7 @@ bindsym $mod+Return exec kitty
 bindsym $mod+Shift+q kill
 
 # lock with i3lock
-bindsym $mod+x exec i3lock
+bindsym $mod+x exec i3lock --tiling --image ~/Pictures/Wallpapers/neon/night_city_street_umbrella_121639_1920x1080.png
 
 # Change focus with arrow keys
 bindsym $mod+Left focus left
