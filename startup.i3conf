@@ -1,7 +1,7 @@
 # vim:ft=i3config
 
 ### Startup ##
-exec_always "setxkbmap -layout us,tr,ar -option 'grp:alt_shift_toggle'"
+exec_always "setxkbmap -layout us,tr,ar -option 'grp:alt_caps_toggle'"
 
 # Picom Composite 
 exec_always --no-startup-id picom -b --config ~/.config/i3/picom.conf
