@@ -50,3 +50,6 @@ exec copyq
 
 exec --no-startup-id todoist 
 for_window [class="Todoist"] , move scratchpad 
+
+exec --no-startup-id kdeconnect-indicator 
+
