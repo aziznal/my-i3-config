@@ -143,3 +143,6 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 
 # copyq
 bindsym $mod+Shift+v exec copyq toggle
+
+# spectacle
+bindsym $mod+Shift+s exec spectacle -bcr
