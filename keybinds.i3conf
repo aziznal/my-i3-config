@@ -146,3 +146,6 @@ bindsym $mod+Shift+v exec copyq toggle
 
 # spectacle
 bindsym $mod+Shift+s exec spectacle -bcr
+
+# toggle notifications with ctrl+meta+alt+d
+bindsym Control+Mod1+Mod4+d exec dunstctl set-paused toggle
