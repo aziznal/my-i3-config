@@ -44,7 +44,6 @@ assign [class="Spotify"] $ws9
 # Start easyeffects and place it in scratchpad
 exec --no-startup-id easyeffects 
 assign [class="easyeffects"] $ws9 
-for_window [class="easyeffects"] resize set 700px 
 
 exec copyq
 
