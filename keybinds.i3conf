@@ -144,8 +144,11 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 # copyq
 bindsym $mod+Shift+v exec copyq toggle
 
-# spectacle
-bindsym $mod+Shift+s exec spectacle -bcr
+# screenshot with spectacle 
+# bindsym $mod+Shift+s exec spectacle -bcr
+
+# screenshot with flameshot
+bindsym $mod+Shift+s exec flameshot gui
 
 # toggle notifications with ctrl+meta+alt+d
 bindsym Control+Mod1+Mod4+d exec dunstctl set-paused toggle
