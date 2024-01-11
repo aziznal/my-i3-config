@@ -9,6 +9,7 @@
    5. `polybar`
    6. `pulseaudio-control`
    7. `picom`
+   8. `kmonad`
 
 2. clone the repo into `~/.config/i3`
 

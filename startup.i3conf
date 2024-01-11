@@ -52,3 +52,5 @@ for_window [class="Todoist"] , move scratchpad
 
 exec --no-startup-id kdeconnect-indicator 
 
+exec_always --no-startup-id kmonad ~/.config/i3/kmonad-config.kbd
+

@@ -159,6 +159,6 @@ bindsym Control+Mod1+Mod4+d exec dunstctl set-paused toggle
 
 ### Home assistant webhook toggles ###
 # Toggle bedroom lights
-bindsym Control+Mod1+Mod4+1 exec curl -X POST -H "Content-Type: application/json" -d '{ "device": "light" }' http://192.168.1.118:8123/api/webhook/room_lights
-bindsym Control+Mod1+Mod4+2 exec curl -X POST -H "Content-Type: application/json" -d '{ "device": "fan" }' http://192.168.1.118:8123/api/webhook/room_lights
+bindsym Control+Shift+Mod1+Mod4+1 exec curl -X POST -H "Content-Type: application/json" -d '{ "device": "light" }' http://192.168.1.118:8123/api/webhook/room_lights
+bindsym Control+Shift+Mod1+Mod4+2 exec curl -X POST -H "Content-Type: application/json" -d '{ "device": "fan" }' http://192.168.1.118:8123/api/webhook/room_lights
 
