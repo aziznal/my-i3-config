@@ -38,12 +38,12 @@ exec --no-startup-id dunst -config $HOME/.config/i3/dunst.conf
 set $ws9 "9  "
 
 # open spotify and place it in its workspace
-exec --no-startup-id  spotify-launcher
-assign [class="Spotify"] $ws9 
+# exec --no-startup-id  spotify-launcher
+# assign [class="Spotify"] $ws9 
 
 # Start easyeffects and place it in scratchpad
-exec --no-startup-id easyeffects 
-assign [class="easyeffects"] $ws9 
+# exec --no-startup-id easyeffects 
+# assign [class="easyeffects"] $ws9 
 
 exec copyq
 
