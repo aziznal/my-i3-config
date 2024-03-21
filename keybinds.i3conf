@@ -86,8 +86,8 @@ mode "resize" {
     bindsym $mod+r mode "default"
 }
 
-# pluseaudio-control next node shortcut (ctrl alt s)
-bindsym Control+Mod1+s exec pulseaudio-control next-node
+# pulseaudio-control next node shortcut (ctrl alt s)
+bindsym Mod1+Control+s exec --no-startup-id "pulseaudio-control --node-blacklist alsa_output.usb-Generic_USB_Audio-00.HiFi__hw_Audio_3__sink,alsa_output.usb-Generic_USB_Audio-00.HiFi__hw_Audio_1__sink next-node"
 
 # Make the currently focused window a scratchpad
 bindsym $mod+Shift+minus move scratchpad
