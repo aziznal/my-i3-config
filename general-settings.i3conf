@@ -28,4 +28,4 @@ gaps inner 8
 
 # docs: https://i3wm.org/docs/userguide.html#_smart_borders
 # smart_borders on
-# smart_gaps on
+smart_gaps on
