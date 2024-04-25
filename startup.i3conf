@@ -1,15 +1,15 @@
 # vim:ft=i3config
 
 ### Startup ##
-exec_always "setxkbmap -layout us,tr,ara -option 'grp:alt_caps_toggle'"
+exec_always "setxkbmap -layout us,tr,ara,de -option 'grp:alt_caps_toggle'"
 
 # Picom Composite 
 exec_always --no-startup-id picom -b --config ~/.config/i3/picom.conf
 
 # set bg
 # exec_always feh --bg-center ~/Pictures/Wallpapers/mar-2024/1355021.jpeg
-exec_always feh --bg-fill ~/Pictures/Wallpapers/mar-2024/1349491.jpeg
-# exec_always feh --bg-fill ~/Pictures/Wallpapers/mar-2024/1354209.jpeg
+# exec_always feh --bg-fill ~/Pictures/Wallpapers/mar-2024/1349491.jpeg
+exec_always feh --bg-fill ~/Pictures/Wallpapers/mar-2024/1354209.jpeg
 
 # Configure keyboard repeat speed:          delay   rpt
 exec_always --no-startup-id xset r rate     250     50 
