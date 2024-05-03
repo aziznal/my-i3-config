@@ -1,7 +1,7 @@
 # vim:ft=i3config
 
 # rofi
-bindsym $mod+d exec "rofi -show drun -show-icons -icon-theme 'Papirus'"
+bindsym $mod+d exec "rofi -show drun -font 'UbuntuMono Nerd Font 18' -show-icons -icon-theme 'Papirus'"
 
 # Volume & Media Button Settings
 set $get_volume exec $HOME/.config/i3/volume/get_volume.sh
