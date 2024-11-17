@@ -2,7 +2,7 @@
 
 1. Install the following packages:
 
-   1. `rofi`
+   1. `rofi` and `rofimoji`
    2. `i3lock`
    3. `i3status`
    4. `playerctl`
