@@ -165,6 +165,15 @@ bindsym Control+Mod1+Mod4+d exec dunstctl set-paused toggle
 
 ### Home assistant webhook toggles ###
 # Toggle bedroom lights
-bindsym Control+Mod1+1 exec curl -X POST -H "Content-Type: application/json" -d '{ "device": "light" }' http://192.168.1.118:8123/api/webhook/room_lights
-bindsym Control+Mod1+2 exec curl -X POST -H "Content-Type: application/json" -d '{ "device": "fan" }' http://192.168.1.118:8123/api/webhook/room_lights
+bindsym Control+Mod1+grave exec curl -X POST -H "Content-Type: application/json" -d '{ "action": "toggle" }' http://192.168.1.118:8123/api/webhook/room_lights
+bindsym Control+Mod1+0 exec curl -X POST -H "Content-Type: application/json" -d '{ "brightness": 100 }' http://192.168.1.118:8123/api/webhook/room_lights
+bindsym Control+Mod1+9 exec curl -X POST -H "Content-Type: application/json" -d '{ "brightness": 1 }' http://192.168.1.118:8123/api/webhook/room_lights
+bindsym Control+Mod1+8 exec curl -X POST -H "Content-Type: application/json" -d '{ "brightness": 50 }' http://192.168.1.118:8123/api/webhook/room_lights
+
+bindsym Control+Mod1+1 exec curl -X POST -H "Content-Type: application/json" -d '{ "color": "white" }' http://192.168.1.118:8123/api/webhook/room_lights
+bindsym Control+Mod1+2 exec curl -X POST -H "Content-Type: application/json" -d '{ "color": "daylight" }' http://192.168.1.118:8123/api/webhook/room_lights
+bindsym Control+Mod1+3 exec curl -X POST -H "Content-Type: application/json" -d '{ "color": "blue" }' http://192.168.1.118:8123/api/webhook/room_lights
+bindsym Control+Mod1+4 exec curl -X POST -H "Content-Type: application/json" -d '{ "color": "red" }' http://192.168.1.118:8123/api/webhook/room_lights
+bindsym Control+Mod1+5 exec curl -X POST -H "Content-Type: application/json" -d '{ "color": "magenta" }' http://192.168.1.118:8123/api/webhook/room_lights
+bindsym Control+Mod1+6 exec curl -X POST -H "Content-Type: application/json" -d '{ "color": "cyan" }' http://192.168.1.118:8123/api/webhook/room_lights
 
