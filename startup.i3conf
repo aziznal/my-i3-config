@@ -12,7 +12,11 @@ exec_always feh --bg-fill ~/Pictures/Wallpapers/bird_feathers_cute.jpg
 # Configure keyboard repeat speed:          delay   rpt
 exec_always --no-startup-id xset r rate     250     50 
 
+# increase screensaver to 1 hr
+exec_always --no-startup-id xset s 3600 
+
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+
 # enable bluetooth on startup
 exec_always --no-startup-id blueberry-tray
 
@@ -24,8 +28,7 @@ exec --no-startup-id dex --autostart --environment i3
 # screen before suspend. Use loginctl lock-session to lock your screen.
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
-# NetworkManager is the most popular way to manage wireless networks on Linux,
-# and nm-applet is a desktop environment-independent system tray GUI for it.
+# Network manager system tray
 exec --no-startup-id nm-applet
 
 # Volume change notification
