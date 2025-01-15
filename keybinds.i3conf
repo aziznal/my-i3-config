@@ -177,6 +177,9 @@ bindsym Control+Mod1+4 exec curl -X POST -H "Content-Type: application/json" -d 
 bindsym Control+Mod1+5 exec curl -X POST -H "Content-Type: application/json" -d '{ "color": "magenta" }' http://192.168.1.118:8123/api/webhook/room_lights
 bindsym Control+Mod1+6 exec curl -X POST -H "Content-Type: application/json" -d '{ "color": "cyan" }' http://192.168.1.118:8123/api/webhook/room_lights
 
-
 # Run colorpicker
 bindsym Control+Shift+c exec gpick
+
+# Run x11-emoji-picker 
+bindsym Control+period exec emoji-picker 
+
