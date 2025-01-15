@@ -18,7 +18,7 @@ default_floating_border pixel 2
 
 # color vars
 # set $borderColor #7e12e3
-set $borderColor #03fc73
+set $borderColor #ffffff
 
 # Border Colors
 # class                 border        backgr.       text     indicator     child_border
