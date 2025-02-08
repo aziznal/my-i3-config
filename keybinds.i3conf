@@ -1,7 +1,7 @@
 # vim:ft=i3config
 
 # rofi
-bindsym $mod+d exec "rofi -show drun -font 'UbuntuMono Nerd Font 18' -show-icons -icon-theme 'Papirus'"
+bindsym $mod+d exec "rofi -show drun -font 'UbuntuMono Nerd Font 32' -show-icons -icon-theme 'Papirus'"
 # bindsym $mod+Shift+d exec "rofi -modi 'emoji:rofimoji -a type' -show emoji"
 bindsym $mod+Shift+d exec "rofi -show run"
 
