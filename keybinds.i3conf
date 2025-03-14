@@ -183,3 +183,6 @@ bindsym Control+Shift+c exec gpick
 # Run x11-emoji-picker 
 bindsym Control+period exec emoji-picker 
 
+# Run hints on Alt+; (from https://github.com/AlfredoSequeida/hints)
+bindsym Mod1+semicolon exec /home/aziznal/.local/bin/hints
+
