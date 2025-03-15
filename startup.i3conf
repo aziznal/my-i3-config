@@ -50,8 +50,11 @@ set $ws9 "9  "
 
 exec copyq
 
-exec --no-startup-id todoist 
-for_window [class="Todoist"] , move scratchpad 
+# exec --no-startup-id todoist 
+# for_window [class="Todoist"] , move scratchpad 
+
+exec --no-startup-id obsidian
+for_window [class="Obsidian"] , move scratchpad 
 
 exec --no-startup-id kdeconnect-indicator 
 
