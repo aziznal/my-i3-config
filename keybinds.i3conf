@@ -3,7 +3,7 @@
 # rofi
 bindsym $mod+d exec "rofi -show drun -font 'UbuntuMono Nerd Font 32' -show-icons -icon-theme 'Papirus'"
 # bindsym $mod+Shift+d exec "rofi -modi 'emoji:rofimoji -a type' -show emoji"
-bindsym $mod+Shift+d exec "rofi -show run"
+bindsym $mod+Shift+d exec "rofi -show run -font 'UbuntuMono Nerd Font 32'"
 
 # Volume & Media Button Settings
 set $get_volume exec $HOME/.config/i3/volume/get_volume.sh
