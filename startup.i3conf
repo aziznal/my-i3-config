@@ -54,7 +54,7 @@ exec copyq
 # for_window [class="Todoist"] , move scratchpad 
 
 exec --no-startup-id obsidian
-for_window [class="Obsidian"] , move scratchpad 
+for_window [class="obsidian"] , move scratchpad 
 
 exec --no-startup-id kdeconnect-indicator 
 
