@@ -26,6 +26,9 @@ bindsym $mod+Return exec kitty
 # kill focused window
 bindsym $mod+Shift+q kill
 
+# center current window (moving to floating first)
+bindsym $mod+Shift+c floating enable, resize set 2400 px 1800 px, move position center
+
 # lock with i3lock
 bindsym $mod+x exec i3lock --tiling --image ~/Pictures/Wallpapers/neon/night_city_street_umbrella_121639_1920x1080.png
 
@@ -137,9 +140,6 @@ bindsym $mod+Shift+7 move container to workspace number $ws7
 bindsym $mod+Shift+8 move container to workspace number $ws8
 bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
-
-# reload the configuration file
-bindsym $mod+Shift+c reload
 
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
